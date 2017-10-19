@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD62A8E91F98B5200055C8E7 /* BPMCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD62A8E81F98B5200055C8E7 /* BPMCalculator.m */; };
-		AD62A8EA1F98B5200055C8E7 /* BPMCalculator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AD62A8E71F98B5200055C8E7 /* BPMCalculator.h */; };
+		AD62A8F61F98B54E0055C8E7 /* BPMCalculator.c in Sources */ = {isa = PBXBuildFile; fileRef = AD62A8F01F98B54E0055C8E7 /* BPMCalculator.c */; };
+		AD62A8F71F98B54E0055C8E7 /* WaveletTransformer.c in Sources */ = {isa = PBXBuildFile; fileRef = AD62A8F21F98B54E0055C8E7 /* WaveletTransformer.c */; };
+		AD62A8F81F98B54E0055C8E7 /* WaveletAnalysisContainer.c in Sources */ = {isa = PBXBuildFile; fileRef = AD62A8F51F98B54E0055C8E7 /* WaveletAnalysisContainer.c */; };
+		AD62A8FB1F98B5630055C8E7 /* FloatArrayOperations.c in Sources */ = {isa = PBXBuildFile; fileRef = AD62A8F91F98B5630055C8E7 /* FloatArrayOperations.c */; };
+		AD62A8FE1F98B5760055C8E7 /* fft.c in Sources */ = {isa = PBXBuildFile; fileRef = AD62A8FC1F98B5760055C8E7 /* fft.c */; };
+		AD62A9091F98B9CD0055C8E7 /* BPMCalculator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AD62A8F41F98B54E0055C8E7 /* BPMCalculator.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +22,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				AD62A8EA1F98B5200055C8E7 /* BPMCalculator.h in CopyFiles */,
+				AD62A9091F98B9CD0055C8E7 /* BPMCalculator.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +30,16 @@
 
 /* Begin PBXFileReference section */
 		AD62A8E41F98B5200055C8E7 /* libBPMCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBPMCalculator.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD62A8E71F98B5200055C8E7 /* BPMCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPMCalculator.h; sourceTree = "<group>"; };
-		AD62A8E81F98B5200055C8E7 /* BPMCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPMCalculator.m; sourceTree = "<group>"; };
+		AD62A8F01F98B54E0055C8E7 /* BPMCalculator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BPMCalculator.c; sourceTree = "<group>"; };
+		AD62A8F11F98B54E0055C8E7 /* WaveletAnalysisContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveletAnalysisContainer.h; sourceTree = "<group>"; };
+		AD62A8F21F98B54E0055C8E7 /* WaveletTransformer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WaveletTransformer.c; sourceTree = "<group>"; };
+		AD62A8F31F98B54E0055C8E7 /* WaveletTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveletTransformer.h; sourceTree = "<group>"; };
+		AD62A8F41F98B54E0055C8E7 /* BPMCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMCalculator.h; sourceTree = "<group>"; };
+		AD62A8F51F98B54E0055C8E7 /* WaveletAnalysisContainer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = WaveletAnalysisContainer.c; sourceTree = "<group>"; };
+		AD62A8F91F98B5630055C8E7 /* FloatArrayOperations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FloatArrayOperations.c; sourceTree = "<group>"; };
+		AD62A8FA1F98B5630055C8E7 /* FloatArrayOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatArrayOperations.h; sourceTree = "<group>"; };
+		AD62A8FC1F98B5760055C8E7 /* fft.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fft.c; sourceTree = "<group>"; };
+		AD62A8FD1F98B5760055C8E7 /* fft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fft.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,16 @@
 		AD62A8E61F98B5200055C8E7 /* BPMCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				AD62A8E71F98B5200055C8E7 /* BPMCalculator.h */,
-				AD62A8E81F98B5200055C8E7 /* BPMCalculator.m */,
+				AD62A8FC1F98B5760055C8E7 /* fft.c */,
+				AD62A8FD1F98B5760055C8E7 /* fft.h */,
+				AD62A8F91F98B5630055C8E7 /* FloatArrayOperations.c */,
+				AD62A8FA1F98B5630055C8E7 /* FloatArrayOperations.h */,
+				AD62A8F01F98B54E0055C8E7 /* BPMCalculator.c */,
+				AD62A8F41F98B54E0055C8E7 /* BPMCalculator.h */,
+				AD62A8F51F98B54E0055C8E7 /* WaveletAnalysisContainer.c */,
+				AD62A8F11F98B54E0055C8E7 /* WaveletAnalysisContainer.h */,
+				AD62A8F21F98B54E0055C8E7 /* WaveletTransformer.c */,
+				AD62A8F31F98B54E0055C8E7 /* WaveletTransformer.h */,
 			);
 			path = BPMCalculator;
 			sourceTree = "<group>";
@@ -123,7 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD62A8E91F98B5200055C8E7 /* BPMCalculator.m in Sources */,
+				AD62A8FB1F98B5630055C8E7 /* FloatArrayOperations.c in Sources */,
+				AD62A8F71F98B54E0055C8E7 /* WaveletTransformer.c in Sources */,
+				AD62A8F61F98B54E0055C8E7 /* BPMCalculator.c in Sources */,
+				AD62A8F81F98B54E0055C8E7 /* WaveletAnalysisContainer.c in Sources */,
+				AD62A8FE1F98B5760055C8E7 /* fft.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
